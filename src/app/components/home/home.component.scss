@@ -18,7 +18,7 @@
   h2 {
     font-size: 38px;
     letter-spacing: 3px;
-    text-transform: uppercxe;
+    text-transform: uppercase;
     padding: 20px 0 30px;
   }
 }
@@ -51,6 +51,7 @@
       overflow: hidden;
       padding: 10px 50px;
       border-radius: 20px;
+      z-index: 2;
     }
   }
 

@@ -3,10 +3,11 @@ import { MaterialModules } from '../../modules/module';
 import { HeaderComponent } from '../../shared-components/header/header.component';
 import { FooterComponent } from '../../shared-components/footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { BubbleComponent } from '../../shared-components/bubble/bubble.component';
 
 @Component({
   selector: 'app-home',
-  imports: [MaterialModules, HeaderComponent, FooterComponent, CommonModule],
+  imports: [MaterialModules, HeaderComponent, FooterComponent, CommonModule, BubbleComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
