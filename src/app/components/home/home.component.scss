@@ -44,7 +44,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-     
+
     .image-container {
       height: 60vh;
       background: linear-gradient(to top, var(--primary-color-800), var(--primary-color));
@@ -102,10 +102,35 @@ video {
   border-radius: 8px;
 }
 
-
 .card {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 350px;
+  height: 250px;
+  border: 5px solid var(--primary-color-800);
+  background-color: #1d1a30;
+
+  mat-card-subtitle {
+    color: #b0b0b0;
+  }
+
+  mat-card-content {
+    margin: 10px 0 15px;
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      line-height: 1.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+    }
+  }
+
+  mat-card-footer {
+    color: var(--primary-color-200);
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
 
   &-container {
     display: flex;

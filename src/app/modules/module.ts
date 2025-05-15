@@ -19,6 +19,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatSortModule } from "@angular/material/sort";
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatRippleModule } from "@angular/material/core";
 
 const matModules = [
   AsyncPipe,
@@ -40,7 +41,8 @@ const matModules = [
   MatMenuModule,
   MatPaginatorModule,
   MatSortModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatRippleModule
 ]
 
 @NgModule({

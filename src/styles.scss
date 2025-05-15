@@ -1,6 +1,7 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material'as mat;
+@use './app/themes/shared.scss';
 
 html {
   @include mat.theme((color: (theme-type: light,
@@ -15,12 +16,15 @@ html {
 
 :root {
   --primary-color: #020c1b;
+  --primary-color-200: #8892b0;
+  --primary-color-400: #3d4459;
   --primary-color-800: #131c2a;
   --secondary-color: #020c1b;
 }
 
 html,
 body {
+  color: white;
   scroll-behavior: smooth;
   height: 100%;
   margin: 0;
@@ -68,11 +72,12 @@ a {
     height: 100%;
     object-fit: contain;
   }
+}
 
-  // &-container {
-  //   width: 100%;
-  //   height: auto;
-  //   align-items: center;
-  //   text-align: center;
-  // }
+.stick {
+  &-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }

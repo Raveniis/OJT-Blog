@@ -1,1 +1,47 @@
-<p>week {{ weekId }} works!</p>
+<div class="container">
+  <div class="content-container">
+    <h2>week {{ weekId }}</h2>
+    <p class="sub-title">{{ data.span }}</p>
+
+    <div class="card-container">
+      <mat-card class="card" *ngFor="let item of data.daily">
+        <mat-card-header>
+          <mat-card-title>{{ item.date }}</mat-card-title>
+          <mat-card-subtitle>{{ item.dtr }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="image-container">
+               <img mat-card-xl-image class="image-contain" *ngFor="let image of item.images" [src]="image" />
+          </div>
+          <p>{{ item.activity_description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="navigation">
+    <div
+      class="pointer flat-button"
+      mat-ripple
+      [routerLink]="['/documentation/week/', weekId - 1]"
+      [matRippleColor]="'rgba(255,255,255, 0.1)'"
+      *ngIf="weekId > 1"
+    >
+      Previous Week
+    </div>
+    <div
+      class="pointer flat-button"
+      mat-ripple
+      [matRippleColor]="'rgba(255,255,255, 0.1)'"
+      [routerLink]="['/documentation/week/', weekId + 1]"
+      routerLinkActive="router-link-active"
+      *ngIf="weekId < 13"
+    >
+      Next Week 
+    </div>
+  </div>
+</div>
+
+<div class="stick-bottom">
+  <app-bubble />
+</div>

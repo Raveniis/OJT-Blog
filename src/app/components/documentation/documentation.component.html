@@ -1,10 +1,8 @@
-<div>
-   <p>back</p>
+<div mat-ripple class="flat-button pointer" [matRippleColor]="'rgba(255,255,255, 0.1)'" [routerLink]="['/home']" >
+      <p>Back</p>
 </div>
 
-<router-outlet />
-
-<div>
-   <p>prev</p>
-   <p>next</p>
+<div class="outlet-container">
+      <router-outlet />
 </div>
+

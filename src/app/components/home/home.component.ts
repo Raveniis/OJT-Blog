@@ -4,10 +4,12 @@ import { HeaderComponent } from '../../shared-components/header/header.component
 import { FooterComponent } from '../../shared-components/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { BubbleComponent } from '../../shared-components/bubble/bubble.component';
+import documentationData from '../../data/overall-documentation';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [MaterialModules, HeaderComponent, FooterComponent, CommonModule, BubbleComponent],
+  imports: [MaterialModules, HeaderComponent, FooterComponent, CommonModule, BubbleComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
@@ -68,4 +70,6 @@ export class HomeComponent {
       alt: 'Git and GitHub',
     },
   ];
+
+  documentation = documentationData
 }
