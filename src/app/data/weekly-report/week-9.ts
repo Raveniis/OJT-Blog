@@ -1,7 +1,7 @@
 const weekNine = {
   week: 9,
   span: 'April 7, 2025 - April 12, 2025',
-  preview_image: './assets/day-37.png',
+  preview_image: './documentation/day-37.png',
   preview_documentation: 'On my 37th day as an OJT at IDESS IT, we finalized some of the key features of the mobile application that we are developing to be presented later in the afternoon. We have also configure the environment path to use the hosted backend. This has given us a valuable experience to be able to showcase the current progress of our work. With this presentation, we were able to gain valuable feedbacks from our supervisors on what to work on, and the things that we can improve.',
   daily: [
     {
